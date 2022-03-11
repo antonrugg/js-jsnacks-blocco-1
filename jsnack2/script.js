@@ -2,13 +2,13 @@
 // se è dispari inseriscilo nell’array.
 
 
-numbersArray = [];
+const numbersArray = [];
 
 for (i = 0; i < 6; i++){
     let number;
     while (isNaN(number)) {
         number = parseInt(prompt(`${i + 1}, inserisci un nuovo numero`));
-        
+
     }
     if (number % 2 !== 0) {
         numbersArray.push(number);

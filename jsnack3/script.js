@@ -18,19 +18,19 @@
 // }while(!isValid)
 // console.log(sum);
 
-let isValid = false;
-while (!isValid) {
-    let number = prompt('Insert a four digits number');
-    if (number.length === 4) {
-        isValid = true;
-        let numberArray = Array.from(String(number), Number);
-        let sum = 0;
-        for (i = 0; i < numberArray.length; i++) {
-            sum += numberArray[i];
-        }
-        console.log(sum);
-    }
-}
+// let isValid = false;
+// while (!isValid) {
+//     let number = prompt('Insert a four digits number');
+//     if (number.length === 4) {
+//         isValid = true;
+//         let numberArray = Array.from(String(number), Number);
+//         let sum = 0;
+//         for (i = 0; i < numberArray.length; i++) {
+//             sum += numberArray[i];
+//         }
+//         console.log(sum);
+//     }
+// }
 
 // let number = prompt('Insert a four digits number');
 // let sum = 0;
@@ -41,3 +41,19 @@ while (!isValid) {
     
 // }
 // console.log(sum);
+
+
+
+let numeroUtente;
+while (isNaN(parseInt(numeroUtente)) || numeroUtente.length !== 4) {
+    numeroUtente = prompt('Inserisci numero di 4 cifre');
+
+}
+
+let sommaCifre = 0;
+for (let i = 0; i < numeroUtente.length; i++){
+    const carattere = numeroUtente[i];
+    sommaCifre += parseInt(carattere);
+}
+
+console.log(`La somma delle cifre del numero ${numeroUtente} è: ${sommaCifre}`);
