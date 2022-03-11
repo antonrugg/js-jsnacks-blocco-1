@@ -17,7 +17,3 @@ for (let i = 0; i < invitedGuests.length; i++){
 
 
 console.log(isInvited);
-
-
-
-
